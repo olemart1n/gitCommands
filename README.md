@@ -1,5 +1,6 @@
-# GIT CLI TUTORIAL
+<<<<<<< HEAD
+#GIT TUTORIAL
 
-> This line of text is intended to create a merge conflict. It should not 
-remain in the final version of this file
+This is repository for a Noroff Git Tutorial
+>>>>>>> features/readme
 
