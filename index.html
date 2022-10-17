@@ -5,11 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/style.css">
     <title>noroff git tutorial</title>
 </head>
 
 <body>
-
+    <footer></footer>
+    <main>
+        <div class="m-2">initialize git<span class="badge bg-secondary m-1">git init</span></div>
+        <div class="m-2">to make a text file<span class="badge bg-secondary m-1">touch README.md</span></div>
+        <div class="m-2">check git status<span class="badge bg-secondary m-1">git status</span></div>
+        <div class="m-2">after added to stage<span class="badge bg-secondary m-1">git commit -m 'text that explain what
+                the file is about'</span></div>
+        <div class="m-2">to make a text file<span class="badge bg-secondary m-1">touch README.md</span></div>
+        <div class="m-2">create a new branch<span class="badge bg-secondary m-1">git branc anotherbranch</span></div>
+        <div class="m-2">check exisitng branches<span class="badge bg-secondary m-1">git branch --all</span></div>
+        <div class="m-2">checkout to another branch<span class="badge bg-secondary m-1">git checkout
+                anotherbranch</span></div>
+        <div class="m-2">check differences between branches<span class="badge bg-secondary m-1">git diff master
+                anotherbranch</span></div>
+        <div class="m-2">commit history<span class="badge bg-secondary m-1">git log --oneline</span></div>
+        <div class="m-2">merge a branch<span class="badge bg-secondary m-1">git merge anotherbranch</span></div>
+        <div class="m-2">you can delete a branch after merging<span class="badge bg-secondary m-1">git branch -d
+                anotherbranch</span></div>
+        <div class="m-2">make newbrnach and checkout into it<span class="badge bg-secondary m-1">git checkout -b
+                new-branch</span></div>
+        <div class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
+            if there is conflict between to branches at merge, git will create a conflict diagram.
+        </div>
+        <div class="m-2">add remote origin<span class="badge bg-secondary m-1">git remote add origin
+                https://github.com/UserName/repository-name.git</span></div>
+        <div class="m-2">output a list of all remote repositories that are connected to your local repository.<span
+                class="badge bg-secondary m-1">git remote-v</span></div>
+        <div class="m-2">this command is sometimes needed for pushing to work<span class="badge bg-secondary m-1">git
+                push --set-upstream origin master</span></div>
+        <h3 class="text-primary">tags</h3>
+        <div class="m-2">create a tag<span class="badge bg-secondary m-1">git tag -a v1.0.0 -m "First version of my
+                application"</span></div>
+        <div class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
+            You can check if the command was successfull with the 'git tag' command. this will return the version
+            (v1.0.0). Using this tag we can manage our releases, or even release different versions of our project to
+            different hosts. For example, we may want to show off feature work under development before it is finished
+            in a password protected staging site. When a new feature is ready for testing on the staging zone, but not
+            ready for release on the public website, we can create a staging tag and use this to deploy our code for
+            review.
+        </div>
+        <div class="m-2">create a tag<span class="badge bg-secondary m-1">git tag -a v1.0.0 -m "First version of my
+                application"</span></div>
+        <div class="m-2">push the tag to remote repository<span class="badge bg-secondary m-1">git push --tags</span>
+        </div>
+    </main>
 </body>
 
 </html>
