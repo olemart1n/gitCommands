@@ -23,7 +23,7 @@ concurrency:
 jobs:
   #Install boostrap
   build:
-    runs-on: ubuntu-latest
+    runs-on: mac
     steps:
       - name: Install Boostrap
         run: npm install
