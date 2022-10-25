@@ -21,12 +21,10 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  #Install boostrap
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: npm install
+      - name: npm
       - run: npm install
     
   # Single deploy job since we're just deploying
