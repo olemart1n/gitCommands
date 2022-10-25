@@ -25,8 +25,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Install Boostrap
-        run: npm install
+      - uses: actions/checkout@v1
+      - name: npm install
+      - run: npm install
     
   # Single deploy job since we're just deploying
   deploy:
