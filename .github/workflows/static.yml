@@ -24,7 +24,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: npm
       - run: npm install
     
   # Single deploy job since we're just deploying
